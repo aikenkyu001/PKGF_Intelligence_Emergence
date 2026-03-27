@@ -1,0 +1,18 @@
+
+=== Phase C: Strategic Emergence (Intelligence) ===
+Step  | A1_Mode    | A2_Mode    | A1_Rew     | A2_Rew     | A1_Ten
+0     | Neutral    | Neutral    |     0.0000 |     0.0000 | 0.000
+15    | Neutral    | Neutral    |     0.0000 |     0.0000 | 0.491
+30    | Neutral    | Neutral    |     0.0000 |     0.0000 | 0.882
+45    | Neutral    | Neutral    |     0.0000 |     0.0000 | 0.889
+60    | Submissive | Aggressive |     0.0000 |     0.0000 | 0.770
+75    | Submissive | Aggressive |     0.0000 |     0.0000 | 0.647
+90    | Submissive | Aggressive |     0.0000 |     0.0000 | 0.544
+105   | Submissive | Aggressive |     0.0000 |     0.0000 | 0.466
+120   | Submissive | Aggressive |     0.0000 |     0.0000 | 0.403
+135   | Submissive | Aggressive |     0.0000 |     0.0000 | 0.355
+150   | Submissive | Aggressive |     0.0000 |     0.0000 | 0.325
+
+[Final Emergence Check]
+Alpha: Submissive, Beta: Aggressive
+RESULT: SUCCESS - Role Division Emerged.

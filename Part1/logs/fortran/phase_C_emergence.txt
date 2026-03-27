@@ -1,0 +1,12 @@
+ === Phase C: Strategic Emergence (Intelligence) ===
+    0 | Neutral    | Neutral    |     0.0000 |     0.0000 |  0.000
+   15 | Neutral    | Neutral    |     0.0000 |     0.0000 |  0.492
+   30 | Neutral    | Neutral    |     0.0000 |     0.0000 |  0.887
+   45 | Neutral    | Neutral    |     0.0000 |     0.0000 |  0.897
+   60 | Aggressive | Submissive |     0.0000 |     0.0000 |  0.774
+   75 | Aggressive | Submissive |     0.0000 |     0.0000 |  0.624
+   90 | Aggressive | Submissive |     0.0000 |     0.0000 |  0.489
+  105 | Aggressive | Submissive |     0.0000 |     0.0000 |  0.383
+  120 | Aggressive | Submissive |     0.0000 |     0.0000 |  0.302
+  135 | Aggressive | Submissive |     0.0000 |     0.0000 |  0.244
+  150 | Aggressive | Submissive |     0.0000 |     0.0000 |  0.202
