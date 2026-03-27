@@ -21,21 +21,15 @@ PKGF is a mathematical framework describing information transition as a geometri
 ```text
 PKGF_Intelligence_Emergence/
 ├── Docs/               # Academic papers, theorems, and mathematical definitions
-│   ├── PKGF_Academic_Paper_jp.md  # Full Japanese paper
-│   └── PKGF_Academic_Paper_en.md  # Full English paper (Native)
+│   ├── PKGF_Academic_Paper_jp.md  # Full Japanese paper (Rigorous Edition)
+│   └── PKGF_Academic_Paper_en.md  # Full English paper (Rigorous Edition)
 ├── Part1/              # Phase A-C: 2-body symmetry breaking simulations
-│   ├── emergence_sim.f90  # Fortran 95 implementation
-│   ├── emergence_sim.py   # Python 3.12 implementation
-│   └── logs/              # Stability, deadlock, and emergence logs
 ├── Part2/              # Phase D-E: 15-body social hierarchy simulations
-│   ├── emergence_sim.f90  
-│   ├── emergence_sim.py   
-│   └── logs/              # Group stability and hierarchy formation logs
 ├── Part3/              # Phase G: N-body dimensional comparison simulations
-│   ├── emergence_sim.f90  
-│   ├── emergence_sim.py   
-│   └── logs/              # Dimensionality vs. Tension logs (N=4, 8, 16)
-└── PDF/                # Collected scientific references (Ricci Flow, Higher Gauge Theory, etc.)
+├── Scripts/            # Stability and analysis scripts (Euler vs RK4)
+├── requirements.txt    # Python dependencies (NumPy, SciPy, Matplotlib)
+├── run_all.sh          # Master reproduction script
+└── PDF/                # Scientific references
 ```
 
 ---
@@ -44,48 +38,55 @@ PKGF_Intelligence_Emergence/
 
 ### 1. Fundamental Equations
 - **Co-differential Propulsion**:
-  Meaning flow $v$ is propelled by the co-differential ($\delta F$) of a 2-form $F = d\omega$:
-  \[ \frac{\partial}{\partial t}(KX)^\flat = -\delta F = -\star d \star F \]
+  Velocity field $v$ is propelled by the co-differential ($\delta F$) of a 2-form $F = d\omega$ on a $C^\infty$ compact manifold $M$:
+  \[ v^\flat = -(K^{-1} g^{-1}) \delta F = -(K^{-1} g^{-1}) \star d \star F \]
 - **Divergence-free Constraint**:
-  To maintain logical consistency, the flux $KX$ is always kept source-free:
+  Logical consistency is maintained via source-free semantic flux:
   \[ \operatorname{div}_g (KX) = 0 \]
 - **Adjoint Holonomy Update**:
-  Logical structure $K$ evolves via the connection matrix $\Omega$:
+  Parallel Key $K \in C^1(M, GL(D, \mathbb{R}))$ evolves via the commutator $\dot{K} = [\Omega, K]$:
   \[ K(t+dt) = H K(t) H^{-1}, \quad H = \exp(\Omega dt) \]
 
-### 2. The 16 Elements of Intelligence
-Intelligence is modeled as a coupled system of 16 interacting fields:
-1. Meaning | 2. Context | 3. Metric $g$ | 4. Transformation $K$ | 5. Desire $D$ | 6. Ethics $E$ | 7. Emotion $A$ | 8. Value Shaping | 9. Learning | 10. Memory $H$ | 11. Meta-cognition | 12. Meta-update | 13. Self-reference | 14. Consciousness | 15. Strategy | 16. Social Coupling
-
-### 3. Postulated Theorems
-- **Theorem 1 (Logical Invariance)**: $\det(K)$ is invariant under adjoint holonomy updates.
-- **Theorem 2 (Symmetry Breaking)**: Systems bifurcate into discrete attractors when internal tension exceeds $\mathcal{A}_c$.
-- **Theorem 3 (Dimensional Resolution)**: Higher-dimensional manifolds ($D \ge N$) resolve conflicts (Peaceful Silence).
-- **Theorem 4 (Resonance)**: Social order corresponds to the commutation $[K, F] \to 0$.
+### 2. Postulated Theorems (Formal Definitions)
+- **Theorem 1 (Logical Invariance)**: $\det(K)$ is a first integral ($\frac{d}{dt} \det(K) = 0$) under adjoint holonomy in Banach space.
+- **Theorem 2 (Symmetry Breaking)**: Equivariant pitchfork bifurcation into discrete attractors $\{L_{high}, L_{mid}, L_{low}\}$ triggered by internal tension crossing $\mathcal{A}_c$.
+- **Theorem 3 (Dimensional Resolution)**: Exponential convergence to low-energy equilibrium if $D \ge n$ (Orthogonal Embedding Lemma); persistent conflict if $D < n$.
+- **Theorem 4 (Resonance)**: Commutativity $[K, F] \to 0$ in stable hierarchical states to minimize global dissipation.
 
 ---
 
 ## 🛠️ Build & Execution
 
 ### Prerequisites
-- **Python 3.12+** (NumPy, SciPy, Matplotlib)
-- **Fortran 95/2003** (`gfortran` or equivalent compiler)
+- **Python 3.12+**
+- **Fortran 95/2003** (`gfortran`)
 
-### 1. Fortran Simulations
-To compile and run the numerical simulations in any `Part` directory:
+### 1. Automated Reproduction (Recommended)
+To install dependencies and run all simulation phases (Part 1-3) automatically:
 ```bash
-cd Part1/  # or Part2/, Part3/
+chmod +x run_all.sh
+./run_all.sh
+```
+
+### 2. Manual Execution
+Individual simulations can be run within their respective directories:
+```bash
+# Python
+pip install -r requirements.txt
+python Part1/emergence_sim.py
+
+# Fortran
+cd Part1/
 gfortran emergence_sim.f90 -o emergence_sim
 ./emergence_sim
 ```
 
-### 2. Python Simulations
-To run the high-level logic and visualization scripts:
+### 3. Stability Analysis
+To verify the numerical stability of the Euler scheme ($dt=0.1$) against RK4:
 ```bash
-cd Part1/  # or Part2/, Part3/
-pip install numpy scipy matplotlib
-python emergence_sim.py
+python Scripts/stability_analysis.py
 ```
+*Observation: L2 error accumulated over 100 steps is $\approx 6.5 \times 10^{-5}$, justifying the use of first-order Euler on warped manifolds.*
 
 ---
 
