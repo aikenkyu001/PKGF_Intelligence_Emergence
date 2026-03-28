@@ -3,7 +3,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python: 3.12+](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![Fortran: 95/2003](https://img.shields.io/badge/Fortran-95/2003-orange.svg)](https://gcc.gnu.org/fortran/)
-[![DOI: TBD](https://img.shields.io/badge/DOI-TBD-red.svg)](https://github.com/aikenkyu001/PKGF_Intelligence_Emergence)
+[![DOI: 10.5281/zenodo.19270060](https://img.shields.io/badge/DOI-10.5281/zenodo.19270060-blue.svg)](https://doi.org/10.5281/zenodo.19270060)
 
 ## 🌌 Project Overview
 
@@ -101,7 +101,7 @@ If you use this work in your research, please cite both the foundational theory 
   year = {2026},
   type = {Technical Report},
   url = {https://github.com/aikenkyu001/PKGF_Intelligence_Emergence},
-  doi = {TBD}
+  doi = {10.5281/zenodo.19270060}
 }
 
 @techreport{miyata2026pkgf_foundational,

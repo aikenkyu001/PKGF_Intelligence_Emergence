@@ -214,7 +214,7 @@ This research demonstrates that the emergence of intelligence within PKGF is a p
 ## 9. Data and Code Availability
 Source code for both Python 3.12 and Fortran 95 implementations, along with simulation logs and raw data, are publicly available under the MIT License at the following repository:
 - **GitHub**: [https://github.com/aikenkyu001/PKGF_Intelligence_Emergence](https://github.com/aikenkyu001/PKGF_Intelligence_Emergence)
-- **Zenodo (DOI)**: [TBD]
+- **Zenodo (DOI)**: [10.5281/zenodo.19270060](https://doi.org/10.5281/zenodo.19270060)
 
 ---
 
