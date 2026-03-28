@@ -12,8 +12,8 @@ This repository contains the rigorous theoretical framework, numerical simulatio
 By integrating differential geometry, higher gauge theory, and collective dynamics, we demonstrate how social hierarchies and role differentiation (intelligence) arise as a geometric solution to spatial constraints.
 
 ### 📜 Academic Papers
-- **English**: [Full Academic Paper (Native Rigorous Edition)](Docs/PKGF_Academic_Paper_en.md)
-- **Japanese**: [日本語学術論文 (厳密版)](Docs/PKGF_Academic_Paper_jp.md)
+- **English**: [Full Academic Paper](Docs/PKGF_Academic_Paper_en.md)
+- **Japanese**: [日本語学術論文](Docs/PKGF_Academic_Paper_jp.md)
 
 ---
 
@@ -37,7 +37,7 @@ The agent’s internal logic structure (Parallel Key $K$) is updated via an adjo
 
 ```text
 PKGF_Intelligence_Emergence/
-├── Docs/           # Rigorous Academic Papers & Proof Outlines
+├── Docs/           # Academic Papers & Proof Outlines
 ├── Part1/          # Core: 2-Body Symmetry Breaking (Phase A-C)
 ├── Part2/          # Social: 15-Body Hierarchical Crystallization (Phase D-E)
 ├── Part3/          # Scaling: N-Body vs N-Dimension Resolution (Phase G)
